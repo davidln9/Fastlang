@@ -1,0 +1,14 @@
+
+int main() {
+
+
+	string vars[] = {'hello', 'how are you?', 'goodbye'};
+
+	int i = 0;
+
+	while (i < 3) {
+		println(vars[i]);
+		i = i + 1;
+	}
+
+}

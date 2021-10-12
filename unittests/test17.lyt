@@ -1,0 +1,38 @@
+
+int g_var;
+
+int main() {
+
+	g_var = 0;
+	println(say_hello() + '\n' + ask_question("sports") + '\n' + say_goodbye());
+
+	println(g_var);
+}
+
+string say_hello() {
+
+	g_var = g_var + 1;
+	return "hello there sir!";
+}
+
+string ask_question(string topic) {
+
+	g_var = g_var + 1;
+	if (topic == "health") {
+		return "how many calories a day should you eat?";
+	}
+	if (topic == "education") {
+		return "how many public universities are in the state of Arizona?";
+	}
+	if (topic == "sports") {
+		return "what is UofA's current losing streak?";
+	}
+}
+
+string say_goodbye() {
+
+	g_var = g_var + 1;
+
+	return "well, that's all I have for you today sir. Goodbye!";
+}
+	

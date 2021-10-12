@@ -1,0 +1,14 @@
+
+int main(string args[]) {
+
+	if (len(args) != 2) {
+		eprintln("must give 2 arguments to program");
+		return 1;
+	}
+
+	if (args[0] == args[1]) {
+		println("true");
+	} else {
+		println("false");
+	}
+}

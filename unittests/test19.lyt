@@ -1,0 +1,11 @@
+
+int main() {
+
+	int x = 1;
+
+	if (x == 3) {
+		println("x is 3");
+	} else {
+		println("x is not 3");
+	}
+}

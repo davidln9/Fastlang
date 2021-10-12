@@ -1,0 +1,27 @@
+
+#ifndef	TOKEN_H
+#define TOKEN_H
+
+enum token_type {
+        IDENTIFIER, KEYWORD, POUND, MATH_OP, LPAREN, RPAREN, LBRACKET, RBRACKET, LBRACE, RBRACE,
+	WHILE, DO, FOR, IF, CONTINUE, BREAK, GOTO, INT, FLOAT, ELSE, RUN, STOP, LOOP, PLUS, MINUS, MULT, DIV,
+	NOT, EQUALS, AMPERSAND, DOLLAR, COMMA, MOD, BIN_OR, BIN_AND, CHAR, GT, LT, GTEQ, LTEQ, ARROW, SEMICOLON,
+	COLON, MYSQL_QUOTE, TILDE, SINGLE_QUOTE_STRING, DOUBLE_QUOTE_STRING, END_OF_FILE, EQEQ, INCLUDE,  
+	DEFINE, IFDEF, IFNDEF, KEYWORD_INT, KEYWORD_FLOAT, KEYWORD_STRING, KEYWORD_CHAR, KEYWORD_VOID, PRINT, 
+	PRINTLN, RETURN, EPRINT, EPRINTLN, POWER, LEN, NEQ, PUSH, POP, INSERT, REMOVE
+};
+
+struct token {
+	enum token_type type;
+	char * value;
+	struct token * next;
+};
+
+struct token_a {
+	enum token_type type;
+	char * value;
+};
+
+struct token * get_token_list(const char * filename);
+
+#endif

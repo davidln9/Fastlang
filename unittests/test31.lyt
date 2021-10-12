@@ -1,0 +1,20 @@
+
+int main() {
+
+
+	string vars[] = {'hello', 'how are you?', 'goodbye'};
+
+	int i = 0;
+
+	string result = "";
+	while (i < 3) {
+		result = result + vars[i];
+		i = i + 1;
+		if (i < 3) {
+			result = result + '\n';
+		}
+	}
+
+	println(result);
+
+}

@@ -1,0 +1,9 @@
+
+int main() {
+
+	int x = 0;
+	while (x < 5) {
+		println("hello");
+		x = x + 1;
+	}
+}

@@ -1,0 +1,15 @@
+
+int main() {
+
+	int x = 0;
+	while (x < 5) {
+		println(get_message() + x);
+		x = x + 1;
+	}
+}
+
+
+string get_message() {
+
+	return "hello";
+}

@@ -1,0 +1,27 @@
+
+int main() {
+
+	g_val1 = 3;
+	g_val2 = 5;
+
+	println("g_val1: " + g_val1);
+	println("g_val2: " + g_val2);
+
+	doSwap();
+
+	println("g_val1: " + g_val1);
+	println("g_val2: " + g_val2);
+
+}
+
+
+int doSwap() {
+
+	int tmp = g_val1;
+	g_val1 = g_val2;
+	g_val2 = tmp;
+	return 0;
+}
+
+int g_val1;
+int g_val2;

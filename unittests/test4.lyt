@@ -1,0 +1,19 @@
+
+int main() {
+
+	int x = 0;
+	if (x) {
+		string d = get_message();
+		println(d);
+	}
+
+	println(x);
+}
+
+int g_var;
+
+string get_message() {
+
+	g_var = 1;
+	return "hello";
+}

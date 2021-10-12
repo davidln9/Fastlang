@@ -1,0 +1,14 @@
+
+int main() {
+
+	int x = 1;
+
+	string result;
+	if (x == 3) {
+		result = "x is 3";
+	} else {
+		result = "x is not 3";
+	}
+
+	println(result);
+}

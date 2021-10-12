@@ -1,0 +1,8 @@
+
+int main() {
+
+	int nums[] = { 5, 4, 3 };
+
+	int n = 1;
+	println(nums[n+1]);
+}

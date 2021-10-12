@@ -1,0 +1,14 @@
+
+int main() {
+
+	string c = 'a';
+
+	int i = 0;
+	while (i < 5) {
+		c = c + ', ';
+		i = i + 1;
+	}
+	println(c);
+}
+
+
